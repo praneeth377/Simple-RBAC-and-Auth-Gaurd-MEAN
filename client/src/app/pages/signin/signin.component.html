@@ -1,0 +1,9 @@
+<div class="p-3 max-w-lg mx-auto">
+  <div class="flex flex-col gap-3">
+    <h1 class="text-3xl text-center font-semibold my-7">Sign In</h1>
+    <input type="email" [(ngModel)]="userCredentials.email" class="bg-slate-100 p-3 rounded-lg form-control" placeholder="Email">
+    <input type="password" [(ngModel)]="userCredentials.password" class="bg-slate-100 p-3 rounded-lg form-control" placeholder="Password">
+    <button class="bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80" (click)="signIn()">Sign In</button>
+  </div>
+  <p>New User? <span routerLink="signup" class="text-blue-500 cursor-pointer">Sign Up</span></p>
+</div>

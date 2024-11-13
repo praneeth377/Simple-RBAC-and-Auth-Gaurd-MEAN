@@ -1,0 +1,20 @@
+<div class="row pt-3">
+  <div class="col-12">
+      <table class="table table-bordered table-striped table-sm">
+          <thead>
+              <tr>
+                  <th class="text-center"><strong>Index</strong></th>
+                  <th class="text-center"><strong>Email</strong></th>
+                  <th class="text-center"><strong>Role</strong></th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let i of users; let j = index">
+                <td style="text-align: center;">{{ j + 1 }}</td>
+                <td class="text-center">{{i.email}}</td>
+                <td class="text-center">{{ i.role }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
